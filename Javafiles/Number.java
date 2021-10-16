@@ -1,0 +1,15 @@
+class Number{
+public static void main(String[] args){
+for(int i=0;i<=5;i++){
+for(int j=0;j<=i;j++){
+for(int k=0;k<=j;k++){
+while(k==j){
+System.out.println(k);
+}
+
+}
+System.out.println();
+}
+}
+}
+}

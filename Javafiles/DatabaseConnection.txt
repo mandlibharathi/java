@@ -1,0 +1,18 @@
+import.java.mysql.*;
+class DatabaseConnection{
+public static void main(String[] args){
+try{
+class.forName("com.mysql.jdbc.Driver");
+String str="jdbc:mysql://localhost:3306/sqlexamples?characterEncoding=lation1","root","Jaanu.@22";
+Connection con=DriverManager.getConnection(str);
+Statemet stmt=con.createStatement();
+ResultSet rs=stmt.executeQuery("select * from student");
+while(rs.next()) 
+System.out.println(rs.getInt(1) +"   " + rs.getString(2) + "    " +rs.getString(3));
+con.close();
+}
+catch(Exception e){
+System.out.println(e);
+}
+}
+}
